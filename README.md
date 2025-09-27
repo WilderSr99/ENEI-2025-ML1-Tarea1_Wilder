@@ -1,6 +1,6 @@
 # Assignment: Linear Models, Regularization, and Model Selection on Real Data
 
-**Deadline:** Sunday, Septiembre 29th, 2025, 23:59
+**Deadline:** Monday, Septiembre 29th, 2025, 23:59
 
 **Environment:** Python, `numpy`, `pandas`, `matplotlib`, `scikit-learn`.
 

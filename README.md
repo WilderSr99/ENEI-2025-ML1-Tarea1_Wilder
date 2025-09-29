@@ -155,21 +155,7 @@ Se incluyeron:
 
 ---
 
-## Estructura del repositorio
-
-ENEI-2025-ML1-TAREA1_WILDER/
-├─ .venv/
-├─ data/
-│  └─ hour.csv
-├─ Readme.txt
-├─ .gitattributes
-├─ .gitignore
-├─ README.md
-└─ Tarea_N1_Machine_Learnig.ipynb
-
----
-
-##Lecciones aprendidas
+## Lecciones aprendidas
 
 - Regularización (Ridge/Lasso) es crucial cuando ampliamos el espacio de características (polinomios, dummies), mitigando multicolinealidad y mejorando generalización.
 - Lasso agrega valor en interpretabilidad (esparsidad), mientras Ridge estabiliza parámetros cuando hay alta correlación.
@@ -181,12 +167,14 @@ ENEI-2025-ML1-TAREA1_WILDER/
 
 ## Apéndice: Fórmulas y detalles técnicos
 
-- OLS (cerrado):
-  β^​=(X⊤X)−1X⊤y(o, mejor, β^​=pinv(X)y)
-- Ridge:
-  β^​ridge=(X⊤X+αI)−1X⊤y
-- Lasso: resolución por métodos de optimización convexa (coordinate descent en scikit-learn).
-- Costo MSE:
-  J(β)=n1​i=1∑n​(yi​−y^​i​)2(o 2n1​∑(⋅)2 para GD)
+- **OLS (cerrado):**  
+  $$\hat{\beta} = (X^\top X)^{-1}X^\top y \quad \text{(o, mejor, } \hat{\beta} = \text{pinv}(X)y\text{)}$$
+- **Ridge:**  
+  $$\hat{\beta}_{ridge} = (X^\top X + \alpha I)^{-1}X^\top y$$
+- **Lasso:**  
+  Resolución por métodos de optimización convexa (coordinate descent en *scikit-learn*).
+- **Costo MSE:**  
+  $$J(\beta) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2 
+  \quad \Big(\text{o } \frac{1}{2n}\sum(\cdot)^2 \text{ para GD}\Big)$$
 
 ----

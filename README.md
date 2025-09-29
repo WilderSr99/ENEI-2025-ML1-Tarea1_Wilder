@@ -151,7 +151,7 @@ Se incluyeron:
 - **Split antes del escalado** (evita *data leakage*).  
 - **`Pipeline` y `ColumnTransformer`** en CV para garantizar que estandarización/polinomios/dummies se ajusten **solo** con datos de entrenamiento en cada *fold*.  
 - **TimeSeriesSplit** (cuando procede) para respetar temporalidad en bikes.  
-- **Estabilidad numérica en OLS**: preferir `np.linalg.pinv` o `lstsq` sobre invertir explícitamente \(X^\top X\).
+- **Estabilidad numérica en OLS**: preferir `np.linalg.pinv` o `lstsq` sobre invertir explícitamente $X^\top X$.
 
 ---
 

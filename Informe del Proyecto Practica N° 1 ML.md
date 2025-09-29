@@ -1,4 +1,4 @@
-# Linear Models, Regularization, and Model Selection — Informe del Proyecto
+# Linear Models, Regularization, and Model Selection - Informe del Proyecto
 
 > **Curso:** 2025-G1-910040-3-PEUCD-MACHINE LEARNING I  
 > **Deadline:** Lunes 29 de septiembre de 2025, 23:59  

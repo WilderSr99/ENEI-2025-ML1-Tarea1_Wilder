@@ -41,14 +41,14 @@ Se incluyeron:
 - **Estandarización**: `StandardScaler` ajustado **solo en train** y aplicado a test.  
 - **Modelado**:  
   - OLS *desde cero* con NumPy (y verificación con `LinearRegression`).  
-  - **Ridge/Lasso** con búsqueda de **α** en escala log: \([10^{-3}, 10^{2}]\).  
+  - **Ridge/Lasso** con búsqueda de **α** en escala log: $[10^{-3}, 10^{2}]$.  
   - **Paths**: coeficientes vs α, eje log.  
 - **Bike Sharing**: agregamos `hour.csv` → diario (suma de `cnt`; estadísticas climáticas promedio o máximas/mínimas razonadas). Creamos variables **estacionales** (mes, weekday, workingday, holiday; y dummies correspondientes).  
 - **Polinomios (grado 2)**: aplicados a numéricas; dummies para categóricas; todo integrado con `ColumnTransformer` + `Pipeline`.
 
 ### OLS (mínimos cuadrados ordinarios)
 - **Fortalezas**:  
-  - Solución cerrada \(\hat\beta=(X^\top X)^{-1}X^\top y\) (o mejor, por **pseudo-inversa** / `lstsq` para estabilidad).  
+  - Solución cerrada $\hat{\beta} = (X^\top X)^{-1}X^\top y$ (o mejor, por **pseudo-inversa** / `lstsq` para estabilidad).  
   - **Interpretabilidad** directa de coeficientes.  
   - Buen desempeño en espacio base cuando no hay alta multicolinealidad.
 - **Debilidades observadas**:  
@@ -102,7 +102,7 @@ Se incluyeron:
 ## Cómo la validación cruzada (k-fold) influyó en la elección de la fuerza de regularización
 
 ### Metodología aplicada
-- Búsqueda de **α** en escala logarítmica \([10^{-3}, 10^{2}]\) para Ridge/Lasso.  
+- Búsqueda de **α** en escala logarítmica $[10^{-3}, 10^{2}]$ para Ridge/Lasso.  
 - **KFold (K=5)** con `cross_val_score` o uso de **`RidgeCV` / `LassoCV`**.  
 - **Prevención de data leakage**:  
   - Escalado y generación de features dentro de un **`Pipeline`** (y `ColumnTransformer` cuando corresponde) para que cada *fold* ajuste transformaciones **solo con su train**.  

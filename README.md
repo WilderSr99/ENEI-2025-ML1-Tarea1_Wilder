@@ -1,7 +1,7 @@
 # Linear Models, Regularization, and Model Selection — Informe del Proyecto
 
 > **Curso:** 2025-G1-910040-3-PEUCD-MACHINE LEARNING I  
-> **Deadline:** Domingo 29 de septiembre de 2025, 23:59  
+> **Deadline:** Lunes 29 de septiembre de 2025, 23:59  
 > **Entorno:** Python, NumPy, pandas, Matplotlib, scikit-learn  
 > **Repositorio:** *(este README reemplaza el contenido anterior)*
 

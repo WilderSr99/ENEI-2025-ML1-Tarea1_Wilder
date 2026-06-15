@@ -19,9 +19,9 @@ Este repositorio contiene la implementación, análisis y comparación de modelo
 | **Entorno Tecnológico** | Python, NumPy, pandas, Matplotlib, scikit-learn |
 | **Estado del Repositorio** | Versión Final (Reemplaza el contenido base anterior) |
 
-### 👥 Integrantes del Grupo
-* **Buleje Ticse, Jean Carlos**
-* **Sebastian Rios, Wilder Teddy**
+### Autor
+
+* **Sebastian Rios, Wilder**
 
 ---
 

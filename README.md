@@ -1,4 +1,4 @@
-# Linear Models, Regularization, and Model Selection — Informe de Proyecto
+# Linear Models, Regularization, and Model Selection
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-1.22%2B-013243?logo=numpy&logoColor=white)
